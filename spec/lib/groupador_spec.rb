@@ -25,4 +25,10 @@ describe Groupador do
     expect_any_instance_of(Array).to receive(:shuffle).and_return(users)
     subject.groups(2)
   end
+
+  it 'can list groups as text' do
+    output_for_groups_of_three = subject.slack_formatted_groups(3)
+    expect(output_for_groups_of_three.split('').count('-')).to eq(2)
+    expect(output_for_groups_of_three.split('').count(',')).to eq(4)
+  end
 end
