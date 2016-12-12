@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 ENV.update YAML.load_file('config/application.yml')
 
 require 'slack-ruby-bot'
