@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 module SlackLunchBot
-  class Bot < SlackRubyBot::Bot
+  class App < SlackRubyBot::App
   end
 end
