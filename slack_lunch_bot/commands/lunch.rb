@@ -11,6 +11,7 @@ module SlackLunchBot
       end
 
       command 'groups?' do |client, data, _match|
+        # TODO: retrieve users in the channel from Slack
         users = %w(benjaminboehm felixkubli matthias pandermatt rbuetzer samuel schmijos lunchbot alessandro alicia
                    alyssa amina digi martin nick rroger sihu stephane zora)
 
