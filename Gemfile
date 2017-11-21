@@ -14,3 +14,10 @@ group :development, :test do
   gem 'foreman'
   gem 'rspec'
 end
+
+# slack-ruby-bot/rspec dependencies:
+group :test do
+  gem 'rack-test'
+  gem 'vcr'
+  gem 'webmock'
+end
